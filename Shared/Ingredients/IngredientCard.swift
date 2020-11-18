@@ -23,6 +23,7 @@ struct IngredientCard: View {
         } back: {
             IngredientGraphic(ingredient: ingredient, style: .cardBack, closeAction: closeAction, flipAction: flipCard)
         }
+        .accessibility(identifier: "flip_view")
         .contentShape(Rectangle())
         .animation(.flipCard, value: visibleSide)
     }

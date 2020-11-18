@@ -111,6 +111,7 @@ struct IngredientGraphic: View {
                 systemImage: side == .front ? "info.circle.fill" : "arrow.left.circle.fill",
                 action: flipAction
             )
+            .accessibility(identifier: "card_info_button")
             .scaleEffect(displayingAsCard ? 1 : 0.5)
             .opacity(displayingAsCard ? 1 : 0)
         }

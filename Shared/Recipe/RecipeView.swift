@@ -54,6 +54,7 @@ struct RecipeView: View {
                         ForEach(0 ..< smoothie.measuredIngredients.count) { index in
                             RecipeIngredientRow(measuredIngredient: smoothie.measuredIngredients[index], smoothieCount: smoothieCount)
                                 .padding(.horizontal)
+                                .accessibility(identifier: "ingredient_row_\(index)")
                             if index < smoothie.measuredIngredients.count - 1 {
                                 Divider()
                             }
@@ -107,7 +108,7 @@ struct RecipeIngredientRow: View {
 
                 VStack(alignment: .leading, spacing: 4) {
                     Text(ingredient.name).font(.headline)
-                    MeasurementView(measurement: measurement)
+                    MeasurementView(measurement: measurement).accessibility(identifier: "measurement_\(ingredient.name)")
                 }
 
                 Spacer()

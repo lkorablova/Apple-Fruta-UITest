@@ -24,6 +24,7 @@ public struct NutritionFactView: View {
                 Text("Nutrition Facts", bundle: .module)
                     .font(.title2)
                     .bold()
+                    .accessibility(identifier: "nutrition_facts")
                 Text("Serving Size 1 Cup", bundle: .module)
                     .font(.footnote)
                 Text("\(kilocalories) Calories", bundle: .module)
