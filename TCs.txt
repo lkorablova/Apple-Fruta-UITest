@@ -15,8 +15,8 @@ Test Steps:
  6. Tap "Love" button.
  7. Tap "Favorites" button in Tabbar.
 Expected Result: 
- 1. One of the selected smoothy should be added to the Tab "Favorites" after tab on button "Love".
- The added smoothy should be removed from the Tab "Favorites" after the next tab on button "Love".
+ 1. One of the selected smoothie should be added to the Tab "Favorites" after tab on button "Love".
+ The added smoothie should be removed from the Tab "Favorites" after the next tab on button "Love".
  
  
  
@@ -28,24 +28,29 @@ Test Steps:
  4. Tap one of the ingredient's card.
  5. Tap "i" button on the richt corner.
 Expected Result: 
- 1. The app should go to Results View with "Result for Xcode" as title.
+ 1. The quantity of the ingredients should be changed with the number of portions. 
  
  
  TC004 - Recipe - ingredients portion changes
 Test Steps: 
  1. Open app
  2. Tap the Tab Recipes on the Tabbar.
- 3. Select one of the Smothies.
- 4. 
+ 3. Select one of the smoothies.
+ 4. Tap the "+" button on the portions amount selection.
 Expected Result: 
- 3. The app should go to Results View with "Result for Xcode" as title.
+ 1. The app should go to Results View with "Result for Xcode" as title.
  
  
  TC005 - E2E Buy smoothie
 Test Steps: 
  1. Open app
- 2. Type "Xcode" on search field
- 3. Tap "OK" button
+ 2. Select any of smoothies.
+ 3. Tap "Buy with Apple Pay" button.
 Expected Result: 
- 3. The app should go to Results View with "Result for Xcode" as title.
+ 1. The app should show the screen with text "THANK YOU FOR YOUR ORDER! We will notify you when order is ready." Than app schould show the screen with text "YOUR SMOOTHIE IS READY!"
+ 
+ 
+ 
+ 
+ 
  
